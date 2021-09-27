@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 183483269}
   - component: {fileID: 183483268}
   - component: {fileID: 183483267}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +326,7 @@ GameObject:
   - component: {fileID: 2099937434}
   - component: {fileID: 2099937433}
   - component: {fileID: 2099937435}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -431,17 +431,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1244380759429694369, guid: c5cdfc3ed9e3b416aa384e9c364b4519, type: 3}
+      propertyPath: groundCheck
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1244380759429694374, guid: c5cdfc3ed9e3b416aa384e9c364b4519, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1244380759429694374, guid: c5cdfc3ed9e3b416aa384e9c364b4519, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 1244380759429694374, guid: c5cdfc3ed9e3b416aa384e9c364b4519, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.462
       objectReference: {fileID: 0}
     - target: {fileID: 1244380759429694374, guid: c5cdfc3ed9e3b416aa384e9c364b4519, type: 3}
       propertyPath: m_LocalPosition.z
@@ -481,3 +485,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5cdfc3ed9e3b416aa384e9c364b4519, type: 3}
+--- !u!1 &1244380760393257670 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1244380759429694375, guid: c5cdfc3ed9e3b416aa384e9c364b4519, type: 3}
+  m_PrefabInstance: {fileID: 1244380760393257669}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1244380760393257671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244380760393257670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c0a805799f46ca889724c2f6c545b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  box:
+    origin: {x: 0, y: 0.15}
+    size: {x: 0.9, y: 0.5}
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 64
